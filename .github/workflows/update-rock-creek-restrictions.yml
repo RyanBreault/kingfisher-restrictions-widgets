@@ -1,0 +1,64 @@
+name: Update Rock Creek Restrictions
+
+on:
+  schedule:
+    - cron: "15 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-restrictions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check FWP restrictions and update JSON
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+
+            const url = "https://fwp-gis.mt.gov/arcgis/rest/services/fish/fishViewer/MapServer/1/query?where=UPPER(WATERBODY)%20LIKE%20%27%25ROCK%20CREEK%25%27&outFields=WATERBODY,TITLE,LOCATION,DESCRIPTION,PRESSRELEASE,RESTRICTIONTYPE,UPDATEDATE&returnGeometry=false&f=json";
+
+            const response = await fetch(url);
+            const data = await response.json();
+
+            const features = data.features || [];
+
+            let active = features.length > 0;
+            let message = "✅ No current fishing restrictions reported for Rock Creek.";
+            let restrictionType = "";
+
+            if (active) {
+              const attrs = features[0].attributes || {};
+              restrictionType = attrs.RESTRICTIONTYPE || attrs.TITLE || "Fishing Restriction";
+
+              const title = attrs.TITLE || "Fishing Restriction in Effect";
+              const desc = attrs.DESCRIPTION || "";
+              const location = attrs.LOCATION || "Rock Creek";
+
+              message = `⚠️ ${title}. ${location}. ${desc}`.replace(/\s+/g, " ").trim();
+            }
+
+            const output = {
+              river: "Rock Creek",
+              restricted: active,
+              restriction_type: restrictionType,
+              message: message,
+              source_url: "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
+              last_checked: new Date().toISOString()
+            };
+
+            fs.writeFileSync("rock-creek-restrictions.json", JSON.stringify(output, null, 2) + "\n");
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add rock-creek-restrictions.json
+          git diff --cached --quiet || git commit -m "Update Rock Creek restrictions"
+          git push
