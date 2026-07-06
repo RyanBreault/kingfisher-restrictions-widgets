@@ -1,8 +1,6 @@
-name: Update River Restrictions
+name: Update River Restrictions (TEST)
 
 on:
-  schedule:
-    - cron: "15 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,162 +14,81 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check FWP restrictions and update JSON
+      - name: Generate TEST restriction data
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require("fs");
 
-            const FWP_QUERY_URL =
-              "https://fwp-gis.mt.gov/arcgis/rest/services/fish/fishViewer/MapServer/1/query" +
-              "?where=1%3D1" +
-              "&outFields=WATERBODY,TITLE,LOCATION,DESCRIPTION,PRESSRELEASE,RESTRICTIONTYPE,UPDATEDATE" +
-              "&returnGeometry=false" +
-              "&f=json";
-
-            const SOURCE_URL =
-              "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures";
-
-            const rivers = {
-              "rock-creek": {
-                name: "Rock Creek",
-                matchTerms: ["rock creek"],
-                noRestrictionMessage: "✅ No current fishing restrictions reported for Rock Creek."
-              },
-              "blackfoot": {
-                name: "Blackfoot River",
-                matchTerms: ["blackfoot"],
-                noRestrictionMessage: "✅ No current fishing restrictions reported for the Blackfoot River."
-              },
-              "bitterroot": {
-                name: "Bitterroot River",
-                matchTerms: ["bitterroot"],
-                noRestrictionMessage: "✅ No current fishing restrictions reported for the Bitterroot River."
-              },
-              "clark-fork": {
-                name: "Clark Fork River",
-                matchTerms: ["clark fork", "clarkfork"],
-                noRestrictionMessage: "✅ No current fishing restrictions reported for the Clark Fork River."
-              }
-            };
-
-            function cleanText(value) {
-              if (!value) return "";
-              return String(value)
-                .replace(/<[^>]*>/g, " ")
-                .replace(/&nbsp;/g, " ")
-                .replace(/&amp;/g, "&")
-                .replace(/\s+/g, " ")
-                .trim();
-            }
-
-            function attrsToSearchText(attrs) {
-              return [
-                attrs.WATERBODY,
-                attrs.TITLE,
-                attrs.LOCATION,
-                attrs.DESCRIPTION,
-                attrs.RESTRICTIONTYPE
-              ].map(cleanText).join(" ").toLowerCase();
-            }
-
-            function buildMessage(riverName, matches) {
-              if (!matches.length) {
-                return "";
-              }
-
-              const first = matches[0].attributes || {};
-              const type = cleanText(first.RESTRICTIONTYPE) || cleanText(first.TITLE) || "Fishing Restriction";
-              const title = cleanText(first.TITLE) || type;
-              const location = cleanText(first.LOCATION);
-              const description = cleanText(first.DESCRIPTION);
-
-              let message = `⚠️ ${riverName}: ${title}`;
-
-              if (type && !message.toLowerCase().includes(type.toLowerCase())) {
-                message += ` (${type})`;
-              }
-
-              if (location) {
-                message += `. ${location}`;
-              }
-
-              if (description) {
-                message += `. ${description}`;
-              }
-
-              if (matches.length > 1) {
-                message += ` There are ${matches.length} current restriction notices matching this river.`;
-              }
-
-              return message.replace(/\s+/g, " ").trim();
-            }
-
-            const response = await fetch(FWP_QUERY_URL);
-            if (!response.ok) {
-              throw new Error(`FWP request failed: ${response.status}`);
-            }
-
-            const data = await response.json();
-            const features = data.features || [];
+            const now = new Date().toISOString();
+            const SOURCE_URL = "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures";
 
             const output = {
-              last_checked: new Date().toISOString(),
+              last_checked: now,
               source_url: SOURCE_URL,
-              rivers: {}
+              rivers: {
+                "rock-creek": {
+                  name: "Rock Creek",
+                  restricted: true,
+                  restriction_type: "TEST",
+                  message: "⚠️ TEST ONLY: Rock Creek Hoot Owl Restriction. Fishing prohibited from 2:00 PM until midnight.",
+                  notice_count: 1,
+                  notices: [
+                    {
+                      waterbody: "Rock Creek",
+                      title: "TEST Hoot Owl Restriction",
+                      location: "Entire River",
+                      description: "This is a test restriction generated by GitHub Actions.",
+                      restriction_type: "TEST",
+                      press_release: "",
+                      updatedate: now
+                    }
+                  ]
+                },
+
+                "blackfoot": {
+                  name: "Blackfoot River",
+                  restricted: false,
+                  restriction_type: "",
+                  message: "✅ No current fishing restrictions reported for the Blackfoot River.",
+                  notice_count: 0,
+                  notices: []
+                },
+
+                "bitterroot": {
+                  name: "Bitterroot River",
+                  restricted: false,
+                  restriction_type: "",
+                  message: "✅ No current fishing restrictions reported for the Bitterroot River.",
+                  notice_count: 0,
+                  notices: []
+                },
+
+                "clark-fork": {
+                  name: "Clark Fork River",
+                  restricted: false,
+                  restriction_type: "",
+                  message: "✅ No current fishing restrictions reported for the Clark Fork River.",
+                  notice_count: 0,
+                  notices: []
+                }
+              }
             };
-
-            for (const [key, river] of Object.entries(rivers)) {
-              const matches = features.filter(feature => {
-                const attrs = feature.attributes || {};
-                const text = attrsToSearchText(attrs);
-                return river.matchTerms.some(term => text.includes(term));
-              });
-
-              const restricted = matches.length > 0;
-              const firstAttrs = restricted ? (matches[0].attributes || {}) : {};
-
-              output.rivers[key] = {
-                name: river.name,
-                restricted: restricted,
-                restriction_type: restricted
-                  ? (cleanText(firstAttrs.RESTRICTIONTYPE) || cleanText(firstAttrs.TITLE) || "Fishing Restriction")
-                  : "",
-                message: restricted
-                  ? buildMessage(river.name, matches)
-                  : river.noRestrictionMessage,
-                notice_count: matches.length,
-                notices: matches.map(feature => {
-                  const attrs = feature.attributes || {};
-                  return {
-                    waterbody: cleanText(attrs.WATERBODY),
-                    title: cleanText(attrs.TITLE),
-                    location: cleanText(attrs.LOCATION),
-                    description: cleanText(attrs.DESCRIPTION),
-                    restriction_type: cleanText(attrs.RESTRICTIONTYPE),
-                    press_release: cleanText(attrs.PRESSRELEASE),
-                    updatedate: attrs.UPDATEDATE || null
-                  };
-                })
-              };
-            }
 
             fs.writeFileSync(
               "river-restrictions.json",
               JSON.stringify(output, null, 2) + "\n"
             );
 
-            // Keep the old Rock Creek file alive for the widget you already pasted.
-            const rock = output.rivers["rock-creek"];
             fs.writeFileSync(
               "rock-creek-restrictions.json",
               JSON.stringify({
                 river: "Rock Creek",
-                restricted: rock.restricted,
-                restriction_type: rock.restriction_type,
-                message: rock.message,
+                restricted: true,
+                restriction_type: "TEST",
+                message: "⚠️ TEST ONLY: Rock Creek Hoot Owl Restriction. Fishing prohibited from 2:00 PM until midnight.",
                 source_url: SOURCE_URL,
-                last_checked: output.last_checked
+                last_checked: now
               }, null, 2) + "\n"
             );
 
@@ -180,5 +97,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add river-restrictions.json rock-creek-restrictions.json
-          git diff --cached --quiet || git commit -m "Update river restrictions"
+          git diff --cached --quiet || git commit -m "TEST restriction"
           git push
