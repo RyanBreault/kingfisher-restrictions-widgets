@@ -1,30 +1,38 @@
 {
-  "last_checked": "",
+  "last_checked": "2026-07-06T20:09:21.840Z",
   "source_url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
   "rivers": {
     "rock-creek": {
       "name": "Rock Creek",
       "restricted": false,
       "restriction_type": "",
-      "message": "✅ No current fishing restrictions reported for Rock Creek."
+      "message": "✅ No current fishing restrictions reported for Rock Creek.",
+      "notice_count": 0,
+      "notices": []
     },
     "blackfoot": {
       "name": "Blackfoot River",
       "restricted": false,
       "restriction_type": "",
-      "message": "✅ No current fishing restrictions reported for the Blackfoot River."
+      "message": "✅ No current fishing restrictions reported for the Blackfoot River.",
+      "notice_count": 0,
+      "notices": []
     },
     "bitterroot": {
       "name": "Bitterroot River",
       "restricted": false,
       "restriction_type": "",
-      "message": "✅ No current fishing restrictions reported for the Bitterroot River."
+      "message": "✅ No current fishing restrictions reported for the Bitterroot River.",
+      "notice_count": 0,
+      "notices": []
     },
     "clark-fork": {
       "name": "Clark Fork River",
       "restricted": false,
       "restriction_type": "",
-      "message": "✅ No current fishing restrictions reported for the Clark Fork River."
+      "message": "✅ No current fishing restrictions reported for the Clark Fork River.",
+      "notice_count": 0,
+      "notices": []
     }
   }
 }
