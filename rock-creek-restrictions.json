@@ -1,8 +1,8 @@
 {
   "river": "Rock Creek",
-  "restricted": false,
-  "restriction_type": "",
-  "message": "✅ No current fishing restrictions reported for Rock Creek.",
+  "restricted": true,
+  "restriction_type": "TEST",
+  "message": "⚠️ TEST ONLY: Rock Creek Hoot Owl Restriction. Fishing prohibited from 2:00 PM until midnight.",
   "source_url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-  "last_checked": "2026-07-06T20:09:21.840Z"
+  "last_checked": "2026-07-06T20:38:38.269Z"
 }
