@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-07-11T20:09:35.858Z",
+  "last_checked": "2026-07-11T22:33:06.859Z",
   "source_url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
   "data_source": "https://fwp-gis.mt.gov/arcgis/rest/services/fish/fishViewer/MapServer/1/query?where=1%3D1&outFields=*&returnGeometry=false&f=json",
   "rivers": {
