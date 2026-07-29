@@ -1,85 +1,89 @@
 {
-  "last_checked": "2026-07-23T15:34:51.288Z",
-  "source_url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-  "data_source": "https://fwp-gis.mt.gov/arcgis/rest/services/fish/fishViewer/MapServer/1/query?where=1%3D1&outFields=*&returnGeometry=false&f=json",
+  "generated_at": "2026-07-29T20:41:59.039259+00:00",
+  "source": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
   "rivers": {
-    "rock-creek": {
-      "name": "Rock Creek",
-      "restricted": false,
-      "restriction_type": "",
-      "message": "✅ No current fishing restrictions reported for Rock Creek.",
-      "notice_count": 0,
-      "notices": []
+    "bitterroot": {
+      "name": "Bitterroot River",
+      "restricted": true,
+      "restriction_type": "Hoot Owl Restriction",
+      "effective_date": "July 22",
+      "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River in its entirety, from the confluence of the East and West forks to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17 (non-native trout fishery). Temperatures were measured at the USGS gage 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15 (cutthroat trout fishery).",
+      "notice_count": 1,
+      "notices": [
+        {
+          "source": "Montana FWP Current Waterbody Restrictions",
+          "type": "Hoot Owl Restriction",
+          "waterbody": "Bitterroot River",
+          "effective_date": "July 22",
+          "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River in its entirety, from the confluence of the East and West forks to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17 (non-native trout fishery). Temperatures were measured at the USGS gage 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15 (cutthroat trout fishery).",
+          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
+          "links": []
+        }
+      ]
     },
     "blackfoot": {
       "name": "Blackfoot River",
       "restricted": true,
-      "restriction_type": "Closure",
-      "message": "⚠️ Blackfoot River: Blackfoot River closure. The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90. The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, will be closed to floating beginning Wednesday, July 15 due to construction on a railway bridge. The BNSF Railway Company (BNSF) project includes building a temporary work bridge, and the construction equipment and work will impact enough of the river to make passage through the area unsafe. The closure will last until October 31 or until construction work has been completed and no longer presents a risk. Small boats and tubes can still be carried in at the Milltown State Park Confluence Area as usual, just downstream of the closure. The first public access site with a full boat launch downstream of the closure on the Clark Fork River is Sha-Ron Fishing Access Site (FAS). Upstream on the Blackfoot River, Weigh Station FAS is the last takeout above the closed area. The project has also closed a portion of the Gateway Trail that connects the state park?s Gateway and Confluence areas. The trail is closed from the Gateway area but is open from the Confluence area upstream until it reaches the construction area. The trail closure is signed on-site. Visitors to the Gateway area can still park and use the pedestrian bridge that crosses over the Blackfoot River. Signs will be posted at access sites along the river immediately upstream of the section of river closed to floating. Montana Fish, Wildlife & Parks notes that there may also be a temporary floating closure on this same stretch of river for a portion of the year in 2027 for projected Interstate 90 bridge work over the same stretch of river.",
+      "restriction_type": "Floating Closure",
+      "effective_date": "July 29",
+      "message": "Closed to floating from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, beginning July 15 due to construction on a railway bridge. More information Map (PDF) Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Blackfoot River - from Cedar Meadow FAS to the confluence with the Clark Fork River starting July 29 . Water temperatures were measured at USGS gage 12340000 near Bonner Water temperatures exceeded 71 degrees starting on July 22nd Fishing restriction criteria identified in the Blackfoot Drought Response Plan were met as of July 24th",
       "notice_count": 1,
       "notices": [
         {
+          "source": "Montana FWP Current Waterbody Restrictions",
+          "type": "Floating Closure",
           "waterbody": "Blackfoot River",
-          "title": "Blackfoot River closure",
-          "location": "The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90",
-          "description": "The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, will be closed to floating beginning Wednesday, July 15 due to construction on a railway bridge. The BNSF Railway Company (BNSF) project includes building a temporary work bridge, and the construction equipment and work will impact enough of the river to make passage through the area unsafe. The closure will last until October 31 or until construction work has been completed and no longer presents a risk. Small boats and tubes can still be carried in at the Milltown State Park Confluence Area as usual, just downstream of the closure. The first public access site with a full boat launch downstream of the closure on the Clark Fork River is Sha-Ron Fishing Access Site (FAS). Upstream on the Blackfoot River, Weigh Station FAS is the last takeout above the closed area. The project has also closed a portion of the Gateway Trail that connects the state park?s Gateway and Confluence areas. The trail is closed from the Gateway area but is open from the Confluence area upstream until it reaches the construction area. The trail closure is signed on-site. Visitors to the Gateway area can still park and use the pedestrian bridge that crosses over the Blackfoot River. Signs will be posted at access sites along the river immediately upstream of the section of river closed to floating. Montana Fish, Wildlife & Parks notes that there may also be a temporary floating closure on this same stretch of river for a portion of the year in 2027 for projected Interstate 90 bridge work over the same stretch of river.",
-          "restriction_type": "Closure",
-          "press_release": "",
-          "updatedate": null
-        }
-      ]
-    },
-    "bitterroot": {
-      "name": "Bitterroot River",
-      "restricted": true,
-      "restriction_type": "Hoot Owl",
-      "message": "⚠️ Bitterroot River: Hoot Owl Restrictions - prohibits angling from 2 p.m. to midnight. The entire Bitterroot River from the confluence of the east and west forks to confluence with Clark Fork River.. Temperatures were measured at the USGS gauge 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17. Temperatures were measured at the USGS gauge 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15. This reach of the Bitterroot River is designated in the Statewide Fisheries Management Plan as a cutthroat trout fishery.",
-      "notice_count": 1,
-      "notices": [
-        {
-          "waterbody": "Bitterroot River",
-          "title": "Hoot Owl Restrictions - prohibits angling from 2 p.m. to midnight",
-          "location": "The entire Bitterroot River from the confluence of the east and west forks to confluence with Clark Fork River.",
-          "description": "Temperatures were measured at the USGS gauge 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17. Temperatures were measured at the USGS gauge 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15. This reach of the Bitterroot River is designated in the Statewide Fisheries Management Plan as a cutthroat trout fishery.",
-          "restriction_type": "Hoot Owl",
-          "press_release": "",
-          "updatedate": null
+          "effective_date": "July 29",
+          "message": "Closed to floating from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, beginning July 15 due to construction on a railway bridge. More information Map (PDF) Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Blackfoot River - from Cedar Meadow FAS to the confluence with the Clark Fork River starting July 29 . Water temperatures were measured at USGS gage 12340000 near Bonner Water temperatures exceeded 71 degrees starting on July 22nd Fishing restriction criteria identified in the Blackfoot Drought Response Plan were met as of July 24th",
+          "url": "https://fwp.mt.gov/homepage/news/2026/july/0708-blackfoot-river-floating-closure-below-weigh-station-fishing-access-begins-july-15",
+          "links": [
+            {
+              "label": "More information",
+              "url": "https://fwp.mt.gov/homepage/news/2026/july/0708-blackfoot-river-floating-closure-below-weigh-station-fishing-access-begins-july-15"
+            },
+            {
+              "label": "Map",
+              "url": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/closures/bnsf-construction-map-2026.pptm.pdf"
+            }
+          ]
         }
       ]
     },
     "clark-fork": {
       "name": "Clark Fork River",
       "restricted": true,
-      "restriction_type": "Closure",
-      "message": "⚠️ Clark Fork River: Blackfoot River closure. The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90. The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, will be closed to floating beginning Wednesday, July 15 due to construction on a railway bridge. The BNSF Railway Company (BNSF) project includes building a temporary work bridge, and the construction equipment and work will impact enough of the river to make passage through the area unsafe. The closure will last until October 31 or until construction work has been completed and no longer presents a risk. Small boats and tubes can still be carried in at the Milltown State Park Confluence Area as usual, just downstream of the closure. The first public access site with a full boat launch downstream of the closure on the Clark Fork River is Sha-Ron Fishing Access Site (FAS). Upstream on the Blackfoot River, Weigh Station FAS is the last takeout above the closed area. The project has also closed a portion of the Gateway Trail that connects the state park?s Gateway and Confluence areas. The trail is closed from the Gateway area but is open from the Confluence area upstream until it reaches the construction area. The trail closure is signed on-site. Visitors to the Gateway area can still park and use the pedestrian bridge that crosses over the Blackfoot River. Signs will be posted at access sites along the river immediately upstream of the section of river closed to floating. Montana Fish, Wildlife & Parks notes that there may also be a temporary floating closure on this same stretch of river for a portion of the year in 2027 for projected Interstate 90 bridge work over the same stretch of river. There are 3 current restriction notices matching this river.",
-      "notice_count": 3,
+      "restriction_type": "Hoot Owl Restriction",
+      "effective_date": "July 29",
+      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Flathead River starting July 29 . The USGS gages at Superior, above Missoula, and a sensor at Bearmouth indicated the river exceeded 73 degrees for three days over the past week This extends a Hoot Owl restriction on the Upper Clark fork that started on July 22nd",
+      "notice_count": 1,
       "notices": [
         {
-          "waterbody": "Blackfoot River",
-          "title": "Blackfoot River closure",
-          "location": "The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90",
-          "description": "The Blackfoot River, from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, will be closed to floating beginning Wednesday, July 15 due to construction on a railway bridge. The BNSF Railway Company (BNSF) project includes building a temporary work bridge, and the construction equipment and work will impact enough of the river to make passage through the area unsafe. The closure will last until October 31 or until construction work has been completed and no longer presents a risk. Small boats and tubes can still be carried in at the Milltown State Park Confluence Area as usual, just downstream of the closure. The first public access site with a full boat launch downstream of the closure on the Clark Fork River is Sha-Ron Fishing Access Site (FAS). Upstream on the Blackfoot River, Weigh Station FAS is the last takeout above the closed area. The project has also closed a portion of the Gateway Trail that connects the state park?s Gateway and Confluence areas. The trail is closed from the Gateway area but is open from the Confluence area upstream until it reaches the construction area. The trail closure is signed on-site. Visitors to the Gateway area can still park and use the pedestrian bridge that crosses over the Blackfoot River. Signs will be posted at access sites along the river immediately upstream of the section of river closed to floating. Montana Fish, Wildlife & Parks notes that there may also be a temporary floating closure on this same stretch of river for a portion of the year in 2027 for projected Interstate 90 bridge work over the same stretch of river.",
-          "restriction_type": "Closure",
-          "press_release": "",
-          "updatedate": null
-        },
-        {
+          "source": "Montana FWP Current Waterbody Restrictions",
+          "type": "Hoot Owl Restriction",
           "waterbody": "Clark Fork River",
-          "title": "Hoot Owl Restriction - prohibits angling from 2 p.m. to midnight",
-          "location": "From the Clark Fork¿s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the mouth of Flint Creek",
-          "description": "Temperatures were measured at the USGS gauge 12324200 at Deer Lodge. Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17.",
-          "restriction_type": "Hoot Owl",
-          "press_release": "",
-          "updatedate": null
-        },
+          "effective_date": "July 29",
+          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Flathead River starting July 29 . The USGS gages at Superior, above Missoula, and a sensor at Bearmouth indicated the river exceeded 73 degrees for three days over the past week This extends a Hoot Owl restriction on the Upper Clark fork that started on July 22nd",
+          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
+          "links": []
+        }
+      ]
+    },
+    "rock-creek": {
+      "name": "Rock Creek",
+      "restricted": true,
+      "restriction_type": "Hoot Owl Restriction",
+      "effective_date": "July 29",
+      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for Upper Rock Creek from the confluence of the West and Middle Forks to mouth of Stoney Creek starting July 29 . This reach of Rock Creek is listed as a cutthroat fishery in the Statewide Fish Management Plan with a temperature threshold of three consecutive days over 66 degrees Remote temperature loggers at Bohrnsen Bridge show three consecutive days over 66 degrees starting July 23rd",
+      "notice_count": 1,
+      "notices": [
         {
-          "waterbody": "Bitterroot River",
-          "title": "Hoot Owl Restrictions - prohibits angling from 2 p.m. to midnight",
-          "location": "The entire Bitterroot River from the confluence of the east and west forks to confluence with Clark Fork River.",
-          "description": "Temperatures were measured at the USGS gauge 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17. Temperatures were measured at the USGS gauge 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15. This reach of the Bitterroot River is designated in the Statewide Fisheries Management Plan as a cutthroat trout fishery.",
-          "restriction_type": "Hoot Owl",
-          "press_release": "",
-          "updatedate": null
+          "source": "Montana FWP Current Waterbody Restrictions",
+          "type": "Hoot Owl Restriction",
+          "waterbody": "Rock Creek",
+          "effective_date": "July 29",
+          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for Upper Rock Creek from the confluence of the West and Middle Forks to mouth of Stoney Creek starting July 29 . This reach of Rock Creek is listed as a cutthroat fishery in the Statewide Fish Management Plan with a temperature threshold of three consecutive days over 66 degrees Remote temperature loggers at Bohrnsen Bridge show three consecutive days over 66 degrees starting July 23rd",
+          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
+          "links": []
         }
       ]
     }
