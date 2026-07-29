@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: python -m pip install requests beautifulsoup4
       - name: Update restriction data
-        run: python scripts/update_restrictions.py
+        run: python update_restrictions.py
       - name: Validate JSON
         run: python -m json.tool river-restrictions.json > /dev/null
       - name: Commit changes
