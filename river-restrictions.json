@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T03:02:35.033452+00:00",
+  "generated_at": "2026-08-13T05:51:03.363021+00:00",
   "source": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
   "rivers": {
     "bitterroot": {
@@ -7,20 +7,18 @@
       "restricted": true,
       "restriction_type": "Hoot Owl Restriction",
       "effective_date": "July 22",
-      "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River in its entirety, from the confluence of the East and West forks to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17 (non-native trout fishery). Temperatures were measured at the USGS gage 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15 (cutthroat trout fishery).",
+      "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17.",
       "notice_count": 1,
       "notices": [
         {
           "type": "Hoot Owl Restriction",
           "effective_date": "July 22",
-          "title": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River in its entirety, from the confluence of the East and West forks to the confluence with the Clark Fork River starting July 22 .",
+          "title": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 .",
           "bullets": [
             "Temperatures were measured at the USGS gage 12352500 near Missoula.",
-            "Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17 (non-native trout fishery).",
-            "Temperatures were measured at the USGS gage 12344000 near Darby.",
-            "Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15 (cutthroat trout fishery)."
+            "Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17."
           ],
-          "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River in its entirety, from the confluence of the East and West forks to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17 (non-native trout fishery). Temperatures were measured at the USGS gage 12344000 near Darby. Water temperatures exceeded 66 degrees in this reach of the Bitterroot River for three consecutive days starting July 15 (cutthroat trout fishery).",
+          "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17.",
           "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
           "links": []
         }
@@ -31,8 +29,8 @@
       "restricted": true,
       "restriction_type": "Floating Closure",
       "effective_date": "July 15",
-      "message": "Closed to floating from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, beginning July 15 due to construction on a railway bridge. More information Map (PDF) Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Blackfoot River - from Cedar Meadow FAS to the confluence with the Clark Fork River starting July 29 . Water temperatures were measured at USGS gage 12340000 near Bonner Water temperatures exceeded 71 degrees starting on July 22nd Fishing restriction criteria identified in the Blackfoot Drought Response Plan were met as of July 24th",
-      "notice_count": 2,
+      "message": "Closed to floating from Weigh Station Fishing Access Site downstream to the point where the river crosses under Interstate 90, beginning July 15 due to construction on a railway bridge. More information Map (PDF)",
+      "notice_count": 1,
       "notices": [
         {
           "type": "Floating Closure",
@@ -53,17 +51,6 @@
               "url": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/closures/bnsf-construction-map-2026.pptm.pdf"
             }
           ]
-        },
-        {
-          "type": "Hoot Owl Restriction",
-          "effective_date": "July 29",
-          "title": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Blackfoot River - from Cedar Meadow FAS to the confluence with the Clark Fork River starting July 29 .",
-          "bullets": [
-            "Water temperatures were measured at USGS gage 12340000 near Bonner Water temperatures exceeded 71 degrees starting on July 22nd Fishing restriction criteria identified in the Blackfoot Drought Response Plan were met as of July 24th"
-          ],
-          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Blackfoot River - from Cedar Meadow FAS to the confluence with the Clark Fork River starting July 29 . Water temperatures were measured at USGS gage 12340000 near Bonner Water temperatures exceeded 71 degrees starting on July 22nd Fishing restriction criteria identified in the Blackfoot Drought Response Plan were met as of July 24th",
-          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-          "links": []
         }
       ]
     },
@@ -72,17 +59,18 @@
       "restricted": true,
       "restriction_type": "Hoot Owl Restriction",
       "effective_date": "July 29",
-      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Flathead River starting July 29 . The USGS gages at Superior, above Missoula, and a sensor at Bearmouth indicated the river exceeded 73 degrees for three days over the past week This extends a Hoot Owl restriction on the Upper Clark fork that started on July 22nd",
+      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 . Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge. Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th.",
       "notice_count": 1,
       "notices": [
         {
           "type": "Hoot Owl Restriction",
           "effective_date": "July 29",
-          "title": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Flathead River starting July 29 .",
+          "title": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 .",
           "bullets": [
-            "The USGS gages at Superior, above Missoula, and a sensor at Bearmouth indicated the river exceeded 73 degrees for three days over the past week This extends a Hoot Owl restriction on the Upper Clark fork that started on July 22nd"
+            "Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge.",
+            "Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th."
           ],
-          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Flathead River starting July 29 . The USGS gages at Superior, above Missoula, and a sensor at Bearmouth indicated the river exceeded 73 degrees for three days over the past week This extends a Hoot Owl restriction on the Upper Clark fork that started on July 22nd",
+          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 . Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge. Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th.",
           "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
           "links": []
         }
@@ -90,24 +78,12 @@
     },
     "rock-creek": {
       "name": "Rock Creek",
-      "restricted": true,
-      "restriction_type": "Hoot Owl Restriction",
-      "effective_date": "July 29",
-      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for Upper Rock Creek from the confluence of the West and Middle Forks to mouth of Stoney Creek starting July 29 . This reach of Rock Creek is listed as a cutthroat fishery in the Statewide Fish Management Plan with a temperature threshold of three consecutive days over 66 degrees Remote temperature loggers at Bohrnsen Bridge show three consecutive days over 66 degrees starting July 23rd",
-      "notice_count": 1,
-      "notices": [
-        {
-          "type": "Hoot Owl Restriction",
-          "effective_date": "July 29",
-          "title": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for Upper Rock Creek from the confluence of the West and Middle Forks to mouth of Stoney Creek starting July 29 .",
-          "bullets": [
-            "This reach of Rock Creek is listed as a cutthroat fishery in the Statewide Fish Management Plan with a temperature threshold of three consecutive days over 66 degrees Remote temperature loggers at Bohrnsen Bridge show three consecutive days over 66 degrees starting July 23rd"
-          ],
-          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for Upper Rock Creek from the confluence of the West and Middle Forks to mouth of Stoney Creek starting July 29 . This reach of Rock Creek is listed as a cutthroat fishery in the Statewide Fish Management Plan with a temperature threshold of three consecutive days over 66 degrees Remote temperature loggers at Bohrnsen Bridge show three consecutive days over 66 degrees starting July 23rd",
-          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-          "links": []
-        }
-      ]
+      "restricted": false,
+      "restriction_type": "",
+      "effective_date": "",
+      "message": "No current fishing restrictions reported.",
+      "notice_count": 0,
+      "notices": []
     }
   }
 }
