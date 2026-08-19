@@ -1,28 +1,15 @@
 {
-  "generated_at": "2026-08-19T04:54:40.399557+00:00",
+  "generated_at": "2026-08-19T07:08:49.834186+00:00",
   "source": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
   "rivers": {
     "bitterroot": {
       "name": "Bitterroot River",
-      "restricted": true,
-      "restriction_type": "Hoot Owl Restriction",
-      "effective_date": "July 22",
-      "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17.",
-      "notice_count": 1,
-      "notices": [
-        {
-          "type": "Hoot Owl Restriction",
-          "effective_date": "July 22",
-          "title": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 .",
-          "bullets": [
-            "Temperatures were measured at the USGS gage 12352500 near Missoula.",
-            "Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17."
-          ],
-          "message": "Hoot owl restrictions (prohibits angling between 2 PM to midnight) are in effect for the Bitterroot River from Veteran's Bridge in Hamilton to the confluence with the Clark Fork River starting July 22 . Temperatures were measured at the USGS gage 12352500 near Missoula. Water temperatures exceeded 73 degrees in this reach of the Bitterroot River for three consecutive days starting July 17.",
-          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-          "links": []
-        }
-      ]
+      "restricted": false,
+      "restriction_type": "",
+      "effective_date": "",
+      "message": "No current fishing restrictions reported.",
+      "notice_count": 0,
+      "notices": []
     },
     "blackfoot": {
       "name": "Blackfoot River",
@@ -56,25 +43,12 @@
     },
     "clark-fork": {
       "name": "Clark Fork River",
-      "restricted": true,
-      "restriction_type": "Hoot Owl Restriction",
-      "effective_date": "July 29",
-      "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 . Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge. Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th.",
-      "notice_count": 1,
-      "notices": [
-        {
-          "type": "Hoot Owl Restriction",
-          "effective_date": "July 29",
-          "title": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 .",
-          "bullets": [
-            "Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge.",
-            "Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th."
-          ],
-          "message": "Hoot owl restrictions (fishing prohibited 2:00 p.m. to midnight) are in effect for the Clark Fork River - from the Clark Fork\u2019s origin at the confluence of Warm Springs Creek and Silver Bow Creek to the confluence of the Blackfoot River starting July 29 . Temperatures were measured at the USGS Clark Fork gauge 12324200 at Deer Lodge. Water temperatures exceeded 73 degrees in this reach of the Clark Fork River for three consecutive days starting July 17th.",
-          "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
-          "links": []
-        }
-      ]
+      "restricted": false,
+      "restriction_type": "",
+      "effective_date": "",
+      "message": "No current fishing restrictions reported.",
+      "notice_count": 0,
+      "notices": []
     },
     "rock-creek": {
       "name": "Rock Creek",
